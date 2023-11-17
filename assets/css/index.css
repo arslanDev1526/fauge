@@ -1,0 +1,90 @@
+
+body { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: block;
+    }
+
+.icon { 
+    width: 20px;
+}
+
+.logo { 
+    width: 150px;
+}
+
+.nav-content { 
+    width: 392px;
+}
+
+.nav-content ul li a { 
+    text-decoration: none;
+    color: black; 
+}
+
+.nav-content li { 
+    list-style: none;
+}
+
+.icon-wraper { 
+    width: 142px;
+    margin-right: 10px;
+}
+
+.conf-container img { 
+    border: 10px solid #ffdea6;
+}
+
+
+
+.conf-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .conf-card img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s;
+  }
+
+  .conf-card:hover img {
+    filter: brightness(80%);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 95%;
+    height: 95%;
+    background: linear-gradient(to bottom right, rgba(255, 128, 191, 0.8), rgba(255, 0, 204, 0.8)); /* Gradient color with opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .conf-card:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: #fff;
+    font-size: 24px;
+    /* background: linear-gradient(to bottom right, #ff80bf, #ff00cc); Gradient color */
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
