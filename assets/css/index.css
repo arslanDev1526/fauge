@@ -88,3 +88,87 @@ img{
     border-radius: 10px;
   }
 
+
+
+  .price { 
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ff91af;
+  }
+
+
+
+  .col-lg-3 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .col-lg-3 img {
+    /* width: 100%;
+    height: auto; */
+    transition: filter 0.5s;
+  }
+/* 
+  .col-lg-3:hover img {
+    filter: brightness(80%);
+  } */
+
+  .underline { 
+    width: 90px;
+    height: 2px;
+    background-color: #ff91af;
+   border-radius: 20%;
+    margin: 0 auto;
+
+  }
+
+  .icons-container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    width: 200px;
+    height: 50px;
+    /* background-color: rgba(255, 255, 255, 0.8);  */
+    transition: transform 0.5s;
+    opacity: 0;
+  }
+
+  .col-lg-3:hover .icons-container {
+    transform: translateX(-50%) translateY(-50px);
+    opacity: 1;
+  }
+  
+  .icon { 
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .icon-holder {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #fff;
+    box-shadow: 0 15px 25px #00000014;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.icon-holder:hover {
+    background-color: #ff91af;
+  }
+  
+  .icon-holder:hover .icon {
+    filter: brightness(0) invert(1);
+  }
