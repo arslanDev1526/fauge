@@ -219,9 +219,6 @@ img{
   filter: brightness(0) invert(1);
 }
 .celebs-container { 
-  /* background-image: url('../images/celebs-food.webp');
-  height: 546px;
-  max-width:100%; */
   background-repeat: no-repeat;
   position: relative;
 }
@@ -362,22 +359,97 @@ img{
   border: none;
 }
 .slick-prev {
-z-index: 1; 
-left: 0 !important;
+/* z-index: 1; 
+left: 0 !important; */
 }
 .slick-next {
-  left: 98% !important;
+  /* left: 98% !important;
   background-image: url("../images/svgs/next.svg");
+  background-color: red; */
 }
 .slick-arrow { 
-  border:  solid red 1px !important;
+  border:  solid orange 1px !important;
 }
 .slick-next { 
-  background-image: url('./assets/images/svgs/next.svg');
+  /* background-image: url('./assets/images/svgs/next.svg');
   display: block;
   background-color: red;
-  z-index: 99;
-  width: 100px;
-  height: 400px;
+  z-index: 99; */
+  /* width: 100px;
+  height: 400px; */
+}
+.card-r1 { 
+  margin-bottom: 20px;
+}
+.slider-r1 { 
+  width: 450px;
+}
+.arrival-contianer p { 
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  line-height: 28px;
+}
+.price { 
+  font-size: 15px;
+  font-weight: 700;
+  color: #ff91af;
+}
+.old-price { 
+  font-size: 15px;
+  font-weight: 700;
+  color: #979797;
+}
+#arrival-container .slick-next { 
+  /* background-image: url('../images/svgs/next.svg') !important; */
+  background: #fff;
+    z-index: 1;
+    color: #000;
+    top: 34%;
+    /* transform: translateY(-50%); */
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    /* transition: .3s; */
+    border-radius: 50%;
+    box-shadow: 0 15px 25px #00000014;
+}
+#arrival-container .slick-prev { 
+  /* background-image: url('../images/svgs/next.svg') !important; */
+  background: #fff;
+    z-index: 1;
+    color: #000;
+    top: 34%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 15px 25px #00000014;
+}
+.icons-arrival-container {
+  position: absolute;
+  right: 2%;
+  top: 45%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  transition: transform 0.5s;
+  opacity: 0;
+}
+.slider-r1 { 
+  position: relative;
+  overflow: hidden;
+}
+.slider-r1:hover .icons-arrival-container  {
+  transform: translateX(-30%);
+  opacity: 1;
 }
  
